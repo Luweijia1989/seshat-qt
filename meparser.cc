@@ -927,6 +927,7 @@ bool meParser::parse_me(Sample *M, string &output) {
     if( !mlh->pt ) {
         mlh->prod->printOut(this, G, mlh );
         output = result;
+        result = "";
     } else {
         output = string(mlh->pt->getTeX( mlh->clase ));
 //        printf("%s", output.c_str() );
